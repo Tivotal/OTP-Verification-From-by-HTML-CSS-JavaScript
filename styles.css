@@ -1,0 +1,98 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4070f4;
+}
+
+:where(.container, header, .input-box, form) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 65px;
+  border-radius: 6px;
+  row-gap: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container header {
+  height: 65px;
+  width: 65px;
+  background-color: #4070f4;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.container h3 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.container form .input-box {
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.container form .input-box input {
+  height: 45px;
+  width: 42px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.125rem;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.container form .input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container form button {
+  margin-top: 25px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  background-color: #4070f4;
+  padding: 9px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+form button.active {
+  background-color: #4070f4;
+  pointer-events: auto;
+}
+
+.container form button:hover {
+  background-color: #0e4bf1;
+}
+
+.container form .input-box input::-webkit-inner-spin-button,
+.container form .input-box input::-webkit-outer-spin-button {
+  display: none;
+}
